@@ -1,0 +1,42 @@
+{
+  "name": "MoreSharksNGulls",
+  "author": "FranzFischer78",
+  "description": "Allows you to set the maximum amount of sharks and seagulls that will spawn!",
+  "version": "1.0",
+  "license": "GNU AGPLv3",
+  "icon": "icon.png",
+  "banner": "banner.jpg",
+  "gameVersion": "1.0",
+  "requiredByAllPlayers": false,
+  "updateUrl": "https://www.raftmodding.com/api/v1/mods/moresharksngulls/version.txt",
+  "isModPermanent": false,
+  "excludedFiles": [],
+  "modSettings": [
+    {
+      "type": "slider",
+      "name": "maxSeagullCount",
+      "text": "Amount of seagulls to spawn", 
+      "access": "both",
+      "default": 2,
+      "range": {
+        "type": "number",
+        "min": 0,
+        "max": 100,
+        "decimals": 1 // optional field. This is the numbers of decimals to round a number to for the display and the GetSilderValue method
+      }
+    },
+    {
+      "type": "slider",
+      "name": "maxSharkCount",
+      "text": "Amount of sharks to spawn",
+      "access": "both",
+      "default": 1,
+      "range": { 
+        "type": "number", 
+        "min": 0, 
+        "max": 100, 
+        "decimals": 1 // optional field. This is the numbers of decimals to round a number to for the display and the GetSilderValue method
+      }
+    }
+  ]
+}
